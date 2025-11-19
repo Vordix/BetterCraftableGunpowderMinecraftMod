@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:gunpowder",
+        "minecraft:gunpowder",
+        "minecraft:gunpowder",
+        "minecraft:gunpowder"
+    ],
+    "result": {
+      "id": "better-craftable-gunpowder:better_gunpowder"
+    }
+}

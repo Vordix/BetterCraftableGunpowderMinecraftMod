@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#G ",
+        " B ",
+        " G "
+    ],
+    "key": {
+        "#": "minecraft:string",
+        "G": "minecraft:gunpowder",
+        "B": "minecraft:barrel"
+    },
+    "result": {
+        "id": "better-craftable-gunpowder:explosive_barrel",
+        "count": 1
+    }
+}

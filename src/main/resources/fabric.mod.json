@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "better-craftable-gunpowder",
+	"version": "${version}",
+	"name": "Better Craftable Gunpowder",
+	"description": "This mod adds a realistic crafting recipe to Gunpowder as well as a new kind of gunpowder that can be used as furnace fuel. It also adds the explosive barrel which is basically just a tnt with a different texture and recipe",
+	"authors": [
+		"Vordix"
+	],
+	"contact": {
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/better-craftable-gunpowder/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.vordix.BetterCraftableGunpowder"
+		],
+		"client": [
+			"com.vordix.BetterCraftableGunpowderClient"
+		],
+      "fabric-datagen": [
+        "com.vordix.docs.datagen.BetterCraftableGunpowderDataGenerator"
+      ]
+	},
+	"mixins": [
+		"better-craftable-gunpowder.mixins.json",
+		{
+			"config": "better-craftable-gunpowder.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
