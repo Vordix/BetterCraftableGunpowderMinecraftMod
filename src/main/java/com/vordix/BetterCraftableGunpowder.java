@@ -43,9 +43,6 @@ public class BetterCraftableGunpowder implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-
-
-
 /*      Code für wenn ein Item einfach in der Hand explodieren soll bei benutzung
         UseItemCallback.EVENT.register((player, world, hand) -> {
             if (!player.isSpectator() && player.getMainHandStack().isOf(Items.FLINT_AND_STEEL) && world instanceof ServerWorld serverWorld) {
@@ -55,7 +52,6 @@ public class BetterCraftableGunpowder implements ModInitializer {
         });
 
         */
-
         ModItems.initialize();
         ModBlocks.initalize();
 		LOGGER.info("Hello from Vordix, creator of the 'Better Craftable Gunpowder' Mod");
