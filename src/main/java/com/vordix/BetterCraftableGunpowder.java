@@ -1,32 +1,6 @@
 package com.vordix;
 
-import com.mojang.authlib.yggdrasil.response.UserAttributesResponse;
 import net.fabricmc.api.ModInitializer;
-
-import net.fabricmc.fabric.api.event.player.AttackBlockCallback;
-import net.fabricmc.fabric.api.event.player.UseBlockCallback;
-import net.fabricmc.fabric.api.event.player.UseItemCallback;
-import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.entity.EntityDimensions;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.SpawnGroup;
-import net.minecraft.entity.TntEntity;
-import net.minecraft.entity.ai.brain.task.MoveItemsTask;
-import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.item.Items;
-import net.minecraft.registry.Registry;
-import net.minecraft.server.world.BlockEvent;
-import net.minecraft.server.world.ServerWorld;
-import net.minecraft.test.BlockBasedTestInstance;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.hit.BlockHitResult;
-import net.minecraft.util.hit.HitResult;
-import net.minecraft.world.World;
-import org.lwjgl.opengl.GLDebugMessageAMDCallback;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

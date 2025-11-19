@@ -8,7 +8,8 @@
 		"Vordix"
 	],
 	"contact": {
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+        "website": "https://github.com/Vordix/",
+		"sources": "https://github.com/Vordix/BetterCraftableGunpowderMinecraftMod.git"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/better-craftable-gunpowder/icon.png",
@@ -24,13 +25,6 @@
         "com.vordix.docs.datagen.BetterCraftableGunpowderDataGenerator"
       ]
 	},
-	"mixins": [
-		"better-craftable-gunpowder.mixins.json",
-		{
-			"config": "better-craftable-gunpowder.client.mixins.json",
-			"environment": "client"
-		}
-	],
 	"depends": {
 		"fabricloader": ">=0.17.3",
 		"minecraft": "~1.21.10",
