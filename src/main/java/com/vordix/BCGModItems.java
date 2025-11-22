@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 import java.util.function.Function;
 
-public class ModItems {
+public class BCGModItems {
     //Alle Items hier rein:
     public static final Item BETTER_GUNPOWDER = register("better_gunpowder", Item::new, new Item.Settings());
 //Items nur bis da oben. Ab hier anderer code vom Tutorial
@@ -33,12 +33,12 @@ public class ModItems {
     public static void initialize() {
         // Get the event for modifying entries in the ingredients group.
 // And register an event handler that adds our suspicious item to the ingredients group.
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register((itemGroup) -> itemGroup.add(ModItems.BETTER_GUNPOWDER));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register((itemGroup) -> itemGroup.add(BCGModItems.BETTER_GUNPOWDER));
         // Add the suspicious substance to the registry of fuels, with a burn time of 30 seconds.
 // Remember, Minecraft deals with logical based-time using ticks.
 // 20 ticks = 1 second.
         FuelRegistryEvents.BUILD.register((builder, context) -> {
-            builder.add(ModItems.BETTER_GUNPOWDER, 30 * 20);
+            builder.add(BCGModItems.BETTER_GUNPOWDER, 30 * 20);
         });
     }
 }

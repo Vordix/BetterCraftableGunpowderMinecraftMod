@@ -26,8 +26,8 @@ public class BetterCraftableGunpowder implements ModInitializer {
         });
 
         */
-        ModItems.initialize();
-        ModBlocks.initalize();
+        BCGModItems.initialize();
+        BCGModBlocks.initalize();
 		LOGGER.info("Hello from Vordix, creator of the 'Better Craftable Gunpowder' Mod");
 	}
 

@@ -16,7 +16,7 @@ import net.minecraft.util.Identifier;
 
 import java.util.function.Function;
 
-public class ModBlocks {
+public class BCGModBlocks {
     private static Block register(String name, Function<AbstractBlock.Settings, Block> blockFactory, AbstractBlock.Settings settings, boolean shouldRegisterItem) {
         // Create a registry key for the block
         RegistryKey<Block> blockKey = keyOfBlock(name);
@@ -47,7 +47,7 @@ public class ModBlocks {
     public static void initalize(){
         System.out.println("initialize in ModBlocks aufgerufen");
         //Block als Item möglich machen und in eine Kategorie stecken
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register((itemGroup) -> itemGroup.add(ModBlocks.EXPLOSIVE_BARREL.asItem()));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register((itemGroup) -> itemGroup.add(BCGModBlocks.EXPLOSIVE_BARREL.asItem()));
     }
     // Alle Blöcke ab hier:
     public static final Block EXPLOSIVE_BARREL = register(
